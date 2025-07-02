@@ -38,3 +38,28 @@ const myFunction = function(){
 console.log(typeof outsideTemp);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//    ++++++++++++++++++++++++++++++++++++   //
+
+// stack(primitive) , Heap(non primitive)
+
+let myYoutube = "vishaldotcom"
+
+let anothername = myYoutube
+anothername = "aman"
+
+console.log(myYoutube)
+console.log(anothername)
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "vishal@vishal.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
