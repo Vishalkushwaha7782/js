@@ -29,3 +29,23 @@ const obj4 = {5:"a",6:"b"}
 const obj3 = {...obj1,...obj2}
 // console.log(obj3);
 
+
+const cource = {
+    coursename :"js in hindi",
+    price:"999",
+    courceinstructor : "vishal"
+}
+
+const {courceinstructor:inst} = cource
+console.log(inst);
+
+// {
+//    "name":"vishal",
+//     "coursename" : "js in hinndi",
+//     "price" : "999"
+// }
+
+[
+    {},
+    {},
+]
