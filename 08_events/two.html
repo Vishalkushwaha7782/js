@@ -29,5 +29,27 @@
         clearTimeout(changeMe)
         console.log("stopped")
     })
+      // setInterval(() => {
+    //     console.log('vishal',Date.now())
+    // }, 2000);
+    const sayDate = (str) => {
+        console.log(str,Date.now())
+    }
+    let inetrvalId;
+    document.querySelector('#stop').addEventListener('click',function(){
+            clearInterval(inetrvalId)
+            // inetrvalId = setInterval(sayDate,2000,"hello")
+            inetrvalId = null;
+            console.log('stopped');
+    })
+
+    document.querySelector('#start').addEventListener('click',function(){
+        if(!inetrvalId){
+            inetrvalId = setInterval(sayDate,2000,"hello")
+        }
+        console.log("started");
+    })
+    
+
 </script>
 </html>
