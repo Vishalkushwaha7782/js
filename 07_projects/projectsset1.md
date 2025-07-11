@@ -312,7 +312,7 @@ function newgame(){
 }
 
 ```
-## color change every second
+## project 04 (color change every second)
 
 ```javascript
 const randomcolor = function(){
